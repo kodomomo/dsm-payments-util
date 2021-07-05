@@ -4,7 +4,6 @@ from generate_random_id import generate_random_id
 from sqls import *
 
 pay_database = {
-    
     'port': 3306,
 }
 
@@ -12,7 +11,6 @@ pay_connection = pymysql.connect(**pay_database)
 pay_cursor = pay_connection.cursor(pymysql.cursors.DictCursor)
 
 dms_database = {
-
     'port': 3306,
 }
 
