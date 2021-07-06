@@ -8,4 +8,6 @@ def generate_random_password():
     return f'{random.choice(word_list).lower()}-{random.choice(word_list).lower()}{random.choice(s_chars)}'
 
 
-print(generate_random_password())
+
+
+print("test gen random pw :",generate_random_password())

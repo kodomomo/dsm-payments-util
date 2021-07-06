@@ -15,4 +15,17 @@ def generate_random_id():
     return _id
 
 
-print(generate_random_id())
+def generate_easy_password():
+    _id = ''
+    for _ in range(8): _id += random.choice(nums)
+    for _ in range(2):
+        rand_v = random.randrange(0, 8)
+        _id = list(_id)
+        _id[rand_v] = random.choice(korean)
+        _id = "".join(_id)
+
+    return _id
+
+
+print("test gen easy pass :" ,generate_easy_password())
+print("test gen random id :",generate_random_id())
