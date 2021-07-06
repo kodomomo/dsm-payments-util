@@ -55,4 +55,4 @@ if __name__ == '__main__':
         while get_user_by_uuid_in_pay_db(uuid):
             uuid = generate_random_id()
 
-        insert_user_into_pay_db(user["number"], 10000, user["name"], uuid)
+        insert_user_into_pay_db(user["number"], 20000, user["name"], uuid)
